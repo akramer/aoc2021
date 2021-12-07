@@ -18,7 +18,6 @@ fn part1(days: i64) {
     let mut fish_counts: [i64; 9] = [0; 9];
 
     for s in input.split(',') {
-        println!("digit: {}", s);
         let val: usize = s.parse().unwrap();
         fish_counts[val] += 1;
     }
